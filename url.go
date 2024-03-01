@@ -51,7 +51,7 @@ func ShortenURL(w http.ResponseWriter, r *http.Request) {
 	expiration := time.Now().AddDate(0, 0, 7) // Expiration dans 7 jours
 
 	// Générer une URL courte, par exemple, en utilisant une fonction de hachage
-	shortURL := "https://google.com/" + "short_hash"
+	shortURL := "https://github.com/RedaMESSI/golang" + "short_hash"
 
 	url := URL{
 		LongURL:    longURL,

@@ -9,7 +9,7 @@ import (
 
 func TestShortenURL(t *testing.T) {
 	// Crée une requête POST de test avec une URL longue
-	reqBody := strings.NewReader("long_url=https://example.com")
+	reqBody := strings.NewReader("long_url=https://github.com/RedaMESSI/golang")
 	req := httptest.NewRequest("POST", "/shorten", reqBody)
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	w := httptest.NewRecorder()
